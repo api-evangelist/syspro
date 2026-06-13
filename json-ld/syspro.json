@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SYSPRO",
+  "url": "https://www.syspro.com",
+  "description": "SYSPRO is a manufacturing and distribution ERP platform providing a REST API and integration framework for managing production orders, inventory, purchasing, sales, financial accounting, and supply chain operations.",
+  "sameAs": [
+    "https://www.linkedin.com/company/syspro",
+    "https://twitter.com/SYSPRO"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Sales",
+    "url": "https://www.syspro.com/contact-us/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SYSPRO APIs",
+    "itemListElement": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "SYSPRO OData API",
+        "description": "SYSPRO OData provides RESTful access to SYSPRO data across all functional modules including inventory, production, purchasing, sales, and financials.",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "SYSPRO e.net Solutions API",
+        "description": "SYSPRO e.net Solutions provides a framework for building custom business applications that integrate with SYSPRO using business objects.",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://developer.syspro.com/syspro-e-net/"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "SYSPRO Open Reporting API",
+        "description": "The SYSPRO Open Reporting API enables external applications to programmatically call SYSPRO to run and distribute documents.",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf"
+      }
+    ]
+  },
+  "keywords": [
+    "ERP",
+    "Manufacturing",
+    "Distribution",
+    "Inventory",
+    "Production Orders",
+    "Purchasing",
+    "Sales",
+    "Financial Accounting",
+    "Supply Chain",
+    "OData",
+    "Business Objects"
+  ]
+}
