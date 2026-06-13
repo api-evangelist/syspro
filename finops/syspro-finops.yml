@@ -1,0 +1,99 @@
+name: SYSPRO FinOps
+description: >-
+  Financial operations guidance for SYSPRO API and ERP platform consumption.
+  SYSPRO pricing is modular and quote-based with costs driven by user count,
+  functional modules, deployment model (cloud vs. on-premise), and
+  implementation complexity. API access is bundled with ERP licences rather
+  than metered separately, making cost management primarily a function of
+  licence allocation and concurrent user optimisation.
+url: https://www.syspro.com/contact-us/
+costDrivers:
+  - name: Concurrent User Licences
+    description: >-
+      The primary cost driver for SYSPRO is the number of concurrent user
+      licences. Cloud subscriptions run $75-$200 per user per month; on-premise
+      perpetual licences cost $1,500-$5,000 per concurrent user (one-time).
+      Optimising concurrent user count and shared access reduces licence costs.
+    impact: high
+  - name: Functional Module Licences
+    description: >-
+      SYSPRO is licensed by functional area (manufacturing, inventory,
+      purchasing, sales, financials, etc.). Each module adds to the total
+      licence cost. e.net Solutions business object access is also licensed
+      at functional area level for ISVs. Limit modules to those actively used.
+    impact: high
+  - name: e.net Solutions Business Object Licences
+    description: >-
+      ISVs and custom integrations require e.net Solutions licences allocated
+      to specific functional areas. Unused business object allocations should
+      be reclaimed and reallocated to active functional areas to avoid waste.
+    impact: medium
+  - name: Implementation and Professional Services
+    description: >-
+      Implementation costs range from $30,000 for basic financial and inventory
+      rollouts to $500,000+ for full manufacturing implementations. Reducing
+      customisation scope and using out-of-box business objects and the
+      Application Designer lowers professional services costs.
+    impact: high
+  - name: Cloud Hosting (Azure Infrastructure)
+    description: >-
+      SYSPRO Cloud ERP runs on Microsoft Azure across 18 global regions.
+      Hosting costs are included in the cloud subscription fee and managed by
+      SYSPRO. On-premise customers bear their own infrastructure costs.
+    impact: medium
+optimisationStrategies:
+  - name: Right-size Concurrent User Count
+    description: >-
+      Analyse actual concurrent usage patterns to determine the minimum viable
+      concurrent user licence count. SYSPRO's concurrent (not named) user model
+      means licences are shared across users who don't access the system
+      simultaneously.
+  - name: Functional Area Audit
+    description: >-
+      Regularly audit which functional modules are actively used and disable
+      unused modules to reduce licence costs. Annual reviews aligned to
+      business growth ensure licence spend matches actual usage.
+  - name: Use OData for Read Operations
+    description: >-
+      The OData API is available without additional per-call charges and
+      supports efficient data access for reporting and integration scenarios.
+      Leveraging OData for read-heavy integrations avoids the need for
+      additional e.net business object licences for query-only use cases.
+  - name: Leverage Application Designer for Low-Code Development
+    description: >-
+      SYSPRO's Application Designer and Business Activity Queries provide
+      low-code development capabilities that reduce the need for expensive
+      custom development work, lowering implementation and maintenance costs.
+  - name: ISV Runtime Licence Optimisation
+    description: >-
+      ISVs should allocate e.net runtime licences only to the functional areas
+      their product accesses. Unused functional area allocations should be
+      reclaimed. Review allocations when product features change.
+  - name: Cloud vs. On-Premise TCO Analysis
+    description: >-
+      Cloud subscriptions eliminate infrastructure capital expenditure and
+      include managed updates, monitoring, and security. On-premise perpetual
+      licences have lower per-year cost but higher upfront investment and
+      ongoing infrastructure and maintenance costs. Conduct a 5-year TCO
+      analysis when choosing deployment model.
+budgetingGuidance:
+  smallDeployment:
+    users: 10
+    estimatedMonthlyCost: $1,500 - $4,000 per month (cloud)
+    implementationCost: $30,000 - $100,000
+  mediumDeployment:
+    users: 50
+    estimatedMonthlyCost: $7,500 - $15,000 per month (cloud)
+    implementationCost: $100,000 - $300,000
+  largeDeployment:
+    users: 100
+    estimatedMonthlyCost: $10,000 - $30,000 per month (cloud)
+    implementationCost: $300,000 - $500,000+
+notes: >-
+  SYSPRO does not publish a public API-specific pricing or usage metering
+  page. All cost information is based on published third-party ERP research
+  and should be validated with SYSPRO sales for current pricing. API usage
+  (OData, e.net, Reporting API) is not billed on a per-call basis but is
+  governed by ERP functional area licences and concurrent user counts.
+contact:
+  url: https://www.syspro.com/contact-us/

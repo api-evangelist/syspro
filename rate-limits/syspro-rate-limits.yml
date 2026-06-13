@@ -1,0 +1,50 @@
+name: SYSPRO Rate Limits
+description: >-
+  SYSPRO's API rate limiting policies vary by integration method. The OData
+  API currently has no explicit rate limits on requests per minute or per
+  second, but enforces a maximum row return limit per request. The e.net
+  Solutions business object framework does not publish explicit rate limits,
+  with performance governed by the underlying SYSPRO server infrastructure
+  and concurrent user licences.
+url: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
+limits:
+  - api: SYSPRO OData API
+    type: row-limit
+    value: 5000
+    unit: rows per request
+    notes: >-
+      SYSPRO OData does not have rate limitations such as rows per minute or
+      per second limiting. However, data retrieval is capped at 5000 rows per
+      request following Microsoft OData best practices. Use $skip and $top
+      parameters for pagination to retrieve additional records.
+    reference: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
+  - api: SYSPRO e.net Solutions API
+    type: concurrent-users
+    notes: >-
+      e.net Solutions access is governed by concurrent user licences allocated
+      to functional areas. Business object access is metered by the number of
+      e.net Solutions licences purchased and assigned. No published per-minute
+      or per-second rate limits.
+    reference: https://developer.syspro.com/syspro-e-net/
+  - api: SYSPRO Open Reporting API
+    type: no-published-limits
+    notes: >-
+      The Open Reporting API does not publish explicit rate limits. Performance
+      depends on SYSPRO server resources and concurrent user configuration.
+    reference: https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf
+pagination:
+  odata:
+    method: offset
+    parameters:
+      - name: $skip
+        description: Number of rows to skip for pagination
+      - name: $top
+        description: Maximum number of rows to return per request (max 5000)
+    example: https://[server]/SYSPRO8Odata/SYSPROOData/[company]/[table]?$top=100&$skip=200
+notes: >-
+  SYSPRO does not currently publish formal API rate limit documentation.
+  Customers running SYSPRO Cloud ERP benefit from Microsoft Azure infrastructure
+  with 24/7 monitoring via SYSPRO Cloud Monitoring (SCM). For on-premise
+  deployments, rate limiting decisions are left to the customer's infrastructure
+  configuration. ISVs building integrations should implement retry logic and
+  respect server resource constraints.

@@ -1,0 +1,79 @@
+name: SYSPRO Plans and Pricing
+description: >-
+  SYSPRO ERP pricing is modular and quote-based, tailored to each business's
+  specific needs and deployment model. The platform is available as a cloud
+  subscription or on-premise perpetual licence. API access and integration
+  capabilities are included as part of the ERP licence based on functional
+  area licensing for business objects and e.net Solutions.
+url: https://www.syspro.com/contact-us/
+plans:
+  - name: Cloud ERP Subscription
+    description: >-
+      SYSPRO Cloud ERP delivered as a managed SaaS solution on Microsoft Azure
+      infrastructure across 18 global regions. Includes 24/7 monitoring,
+      automatic updates, and managed security. API access via OData and e.net
+      Solutions included based on licensed functional areas.
+    type: subscription
+    pricing:
+      model: per-user-per-month
+      range: $75 - $200 per user per month
+      currency: USD
+    features:
+      - OData RESTful API access
+      - e.net Solutions business object access
+      - Open Reporting API
+      - 18 global Azure datacenter regions
+      - 24/7 cloud monitoring (SCM)
+      - Automatic upgrades and patches
+      - Role-based access control
+      - Electronic signatures and audit trails
+    notes: >-
+      Pricing is quote-based and varies by number of users, modules, and
+      implementation scope. Contact SYSPRO sales for a tailored quote.
+  - name: On-Premise Perpetual Licence
+    description: >-
+      SYSPRO ERP deployed on customer-managed infrastructure. Perpetual licence
+      model with concurrent user licensing. API and integration capabilities
+      licensed at functional area level via e.net Solutions business objects.
+    type: perpetual
+    pricing:
+      model: per-concurrent-user
+      range: $1,500 - $5,000 per concurrent user (one-time)
+      currency: USD
+    features:
+      - OData RESTful API access
+      - e.net Solutions business object access
+      - Open Reporting API
+      - WCF REST and SOAP service endpoints
+      - Load balancer for fault tolerance
+      - Electronic signatures and audit trails
+      - Role-based access control
+    notes: >-
+      On-premise licences require separate maintenance and support agreements.
+      Implementation costs range from $30,000 for basic rollouts to $500,000+
+      for full manufacturing implementations.
+  - name: ISV Runtime Licence
+    description: >-
+      Licensing model for Independent Software Vendors (ISVs) building products
+      that integrate with SYSPRO using the e.net Solutions framework. Runtime
+      licences allow ISV products to access SYSPRO business objects on behalf
+      of end customers.
+    type: partner
+    pricing:
+      model: contact-for-pricing
+    features:
+      - Runtime product code authentication
+      - Business object access by functional area
+      - e.net Solutions SDK
+      - Application Designer access
+      - Developer forum access
+    notes: >-
+      ISV partners can manage e.net Solutions licences and allocate them to
+      specific functional areas required by operators. Contact SYSPRO partner
+      program for details.
+contact:
+  url: https://www.syspro.com/contact-us/
+  notes: >-
+    SYSPRO does not publish a public API-specific pricing page. All pricing
+    is quote-based and negotiated through the SYSPRO sales team or an
+    authorised SYSPRO reseller.

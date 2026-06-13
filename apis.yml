@@ -1,0 +1,117 @@
+aid: syspro
+name: SYSPRO
+description: >-
+  SYSPRO is a manufacturing and distribution ERP platform providing a REST API
+  and integration framework for managing production orders, inventory,
+  purchasing, sales, financial accounting, and supply chain operations. The
+  platform supports integration via e.net Solutions business objects, OData
+  RESTful endpoints, and WCF services, enabling ISVs and custom application
+  developers to extend and connect with the SYSPRO ecosystem.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/syspro/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - ERP
+  - Manufacturing
+  - Distribution
+  - Inventory
+  - Production Orders
+  - Purchasing
+  - Sales
+  - Financial Accounting
+  - Supply Chain
+apis:
+  - aid: syspro:syspro-odata-api
+    name: SYSPRO OData API
+    description: >-
+      SYSPRO OData provides RESTful access to SYSPRO data across all functional
+      modules including inventory, production, purchasing, sales, and financials.
+      It uses basic authentication over HTTPS and supports standard OData query
+      options including filtering, sorting, pagination, and column selection.
+      Data retrieval is capped at 5000 rows per request with pagination
+      supported via $skip and $top parameters.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
+    baseURL: https://[server]/SYSPRO8Odata/SYSPROOData
+    tags:
+      - OData
+      - Inventory
+      - Production
+      - Purchasing
+      - Sales
+      - Financials
+    properties:
+      - type: Documentation
+        url: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
+      - type: Authentication
+        url: https://developer.syspro.com/documentation/
+  - aid: syspro:syspro-enet-solutions-api
+    name: SYSPRO e.net Solutions API
+    description: >-
+      SYSPRO e.net Solutions provides a framework for building custom business
+      applications that integrate with SYSPRO using business objects. Business
+      objects are specialized modules with predefined functions that automate
+      processing across production orders, inventory management, purchasing,
+      sales orders, and financial accounting. Supports HTTP REST and SOAP
+      endpoints via WCF services with .NET Framework integration.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.syspro.com/syspro-e-net/
+    baseURL: https://[server]/SYSPROWCFService
+    tags:
+      - Business Objects
+      - e.net
+      - WCF
+      - REST
+      - SOAP
+      - Integration
+    properties:
+      - type: Documentation
+        url: https://developer.syspro.com/syspro-e-net/
+      - type: Documentation
+        url: https://developer.syspro.com/integrate-syspro/
+  - aid: syspro:syspro-open-reporting-api
+    name: SYSPRO Open Reporting API
+    description: >-
+      The SYSPRO Open Reporting API enables external applications to
+      programmatically call SYSPRO to run and distribute documents. It creates
+      a business object wrapper around standard SYSPRO print programs, allowing
+      custom and third-party developers to produce single documents from
+      applications outside the main SYSPRO application.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf
+    baseURL: https://[server]/SYSPRO8
+    tags:
+      - Reporting
+      - Documents
+      - Business Objects
+    properties:
+      - type: Documentation
+        url: https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf
+common:
+  - type: Website
+    url: https://www.syspro.com
+  - type: Documentation
+    url: https://developer.syspro.com/documentation/
+  - type: GitHubOrg
+    url: https://github.com/topics/syspro
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/syspro
+  - type: Blog
+    url: https://www.syspro.com/blog/
+  - type: Pricing
+    url: https://www.syspro.com/contact-us/
+  - type: StatusPage
+    url: https://trust.syspro.com/cloud-services/
+  - type: X
+    url: https://twitter.com/SYSPRO
+  - type: Plans
+    url: plans/syspro-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/syspro-rate-limits.yml
+  - type: FinOps
+    url: finops/syspro-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
