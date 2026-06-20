@@ -7,7 +7,7 @@ description: >-
   platform supports integration via e.net Solutions business objects, OData
   RESTful endpoints, and WCF services, enabling ISVs and custom application
   developers to extend and connect with the SYSPRO ecosystem.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/syspro/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -32,7 +32,7 @@ apis:
       options including filtering, sorting, pagination, and column selection.
       Data retrieval is capped at 5000 rows per request with pagination
       supported via $skip and $top parameters.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
     baseURL: https://[server]/SYSPRO8Odata/SYSPROOData
     tags:
@@ -56,7 +56,7 @@ apis:
       processing across production orders, inventory management, purchasing,
       sales orders, and financial accounting. Supports HTTP REST and SOAP
       endpoints via WCF services with .NET Framework integration.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.syspro.com/syspro-e-net/
     baseURL: https://[server]/SYSPROWCFService
     tags:
@@ -79,7 +79,7 @@ apis:
       a business object wrapper around standard SYSPRO print programs, allowing
       custom and third-party developers to produce single documents from
       applications outside the main SYSPRO application.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf
     baseURL: https://[server]/SYSPRO8
     tags:
