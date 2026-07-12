@@ -90,6 +90,10 @@ apis:
       - type: Documentation
         url: https://help.syspro.com/syspro-8-2025/resources/pdfs/2022-release/topics/syspro-8-srs-api-reference-guide.pdf
 common:
+  - type: TrustCenter
+    url: security/syspro-trust-center.yml
+  - type: DomainSecurity
+    url: security/syspro-domain-security.yml
   - type: Website
     url: https://www.syspro.com
   - type: Documentation
