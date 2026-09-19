@@ -64,6 +64,13 @@ apis:
       - Production
       - Purchasing
       - Sales
+      - Financial
+    tags_raw:
+      - OData
+      - Inventory
+      - Production
+      - Purchasing
+      - Sales
       - Financials
     properties:
       - type: Documentation
