@@ -64,7 +64,7 @@ apis:
       - Production
       - Purchasing
       - Sales
-      - Financial
+      - Finance
     tags_raw:
       - OData
       - Inventory
@@ -72,6 +72,7 @@ apis:
       - Purchasing
       - Sales
       - Financials
+      - Financial
     properties:
       - type: Documentation
         url: https://help.syspro.com/syspro-8-2023/topics/insights-and-reporting/syspro-odata/syspro-odata.htm
