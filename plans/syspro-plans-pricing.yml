@@ -81,3 +81,29 @@ contact:
     SYSPRO does not publish a public API-specific pricing page. All pricing
     is quote-based and negotiated through the SYSPRO sales team or an
     authorised SYSPRO reseller.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Cloud ERP Subscription
+    access: other
+    model: subscription
+    model_how: stated
+    units: []
+    periods: []
+  - name: On-Premise Perpetual Licence
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: ISV Runtime Licence
+    access: partner
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
